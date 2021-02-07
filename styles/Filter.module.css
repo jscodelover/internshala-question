@@ -1,0 +1,211 @@
+.filter_btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 0 28px;
+	color: #484848;
+	font-size: 16px;
+	font-weight: 600;
+	background-color: #fff;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+	border-radius: 3px;
+}
+
+.filter_btn img {
+	margin-right: 7px;
+	width: 18px;
+}
+
+.filter_wrapper {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 35.25%;
+	height: 100vh;
+	padding: 32px 16px;
+	transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+	box-shadow: 0px 12px 24px rgba(0, 0, 0, 0.08);
+	background-color: #fff;
+	z-index: 9;
+}
+
+.show_filter {
+	transform: translateX(0vw);
+	visibility: visible;
+}
+
+.hide_filter {
+	transform: translateX(100vw);
+	visibility: hidden;
+}
+
+.filter_header {
+	position: relative;
+}
+
+.filter_header h4 {
+	font-size: 18px;
+	font-weight: 600;
+	line-height: 24px;
+	color: #333333;
+}
+
+.filter_header button {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.filter_wrapper p {
+	margin: 24px 0 8px;
+	font-weight: 500;
+}
+
+.filter_tabs label:first-of-type {
+	border-radius: 4px 0px 0px 4px;
+}
+
+.filter_tabs label:last-of-type {
+	border-radius: 0px 4px 4px 0px;
+}
+
+.filter_tabs label:not(:last-of-type) {
+	border-right: none;
+}
+
+.filter_tabs input {
+	display: none;
+}
+
+.filter_tabs label {
+	padding: 12px 6.1px;
+	display: inline-block;
+	font-weight: 500;
+	font-size: 12px;
+	text-align: center;
+	color: #666;
+	border: 1px solid #e6e6e6;
+}
+
+.location label {
+	min-width: 51.5px;
+}
+.internship label {
+	min-width: 78px;
+}
+.highlight label {
+	min-width: 73px;
+}
+
+.filter_tabs label:before {
+	margin-right: 10px;
+}
+
+.filter_tabs label:hover {
+	cursor: pointer;
+}
+
+.filter_tabs input:checked + label {
+	color: #008bdc;
+	background: #eafcff;
+	border: 1px solid #008bdc;
+}
+
+.interest_dropdown {
+	width: 312px;
+}
+
+.interest_dropdown:not(:last-of-type) {
+	margin-bottom: 12px;
+}
+
+.interest__placeholder {
+	color: rgba(0, 0, 0, 0.25);
+}
+
+.interest__menu-list .interest__option {
+	color: #666;
+}
+
+.interest__menu-list .interest__option--is-focused,
+.interest__menu-list .interest__option--is-selected {
+	background: #eafcff;
+	color: #008bdc;
+}
+
+.filter_action_btn {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	padding: 24px 16px;
+	background-color: #fff;
+	box-shadow: 0px -2px 4px rgb(0 0 0 / 8%);
+}
+
+.filter_action_btn button {
+	width: 150px;
+	padding: 12px 33px;
+	font-weight: 600;
+	color: #00a5ec;
+	border: 1px solid #00a5ec !important;
+	background-color: #fff;
+	border-radius: 4px;
+}
+
+.filter_action_btn .filter_apply {
+	margin-left: 12px;
+	color: #fff;
+	background-color: #00a5ec;
+}
+
+/* Media Query for desktop */
+@media (min-width: 1256px) {
+	.filter_content {
+		width: 312px;
+	}
+}
+
+/* Media Query for mobile */
+@media (max-width: 1255px) {
+	.filter_wrapper {
+		width: 360px;
+	}
+	.location label {
+		min-width: 54.6px;
+	}
+	.internship label {
+		min-width: 82px;
+	}
+	.highlight label {
+		min-width: 78px;
+	}
+	.interest_dropdown {
+		width: 328px;
+	}
+	.filter_action_btn .filter_apply {
+		margin-left: 28px;
+	}
+}
+
+/* Media Query for mobile */
+
+@media (max-width: 991px) {
+	.filter_wrapper {
+		width: 100%;
+	}
+	.filter_content {
+		width: 329px;
+		margin: 0 auto;
+	}
+	.filter_btn {
+		font-size: 14px;
+		padding: 0 15.5px;
+	}
+	.filter_btn img {
+		width: 15px;
+	}
+	.filter_action_btn {
+		text-align: center;
+	}
+}

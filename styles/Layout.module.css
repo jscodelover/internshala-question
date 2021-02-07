@@ -1,0 +1,8 @@
+.container {
+	background: #e5e5e5;
+	height: calc(100vh - 72px);
+}
+
+.main {
+	margin: 0 auto;
+}

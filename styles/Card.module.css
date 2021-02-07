@@ -1,0 +1,101 @@
+.card {
+	position: relative;
+	padding: 16px 16px 16px 24px;
+	margin-bottom: 12px;
+	width: 414px;
+	height: 216px;
+	background-color: #fff;
+	box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.12);
+	border-radius: 8px;
+}
+
+.title {
+	margin-bottom: 4px;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 20px;
+}
+
+.company_name {
+	margin-bottom: 8px;
+	color: #666666;
+}
+
+.stars {
+	margin-bottom: 11px;
+}
+
+.stars > *:not(:last-of-type) {
+	margin-right: 7px;
+}
+
+.company_logo {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	display: flex;
+	padding: 10px;
+	background-color: #fff;
+	border-radius: 50px;
+	border: 1px solid #f8f8f8;
+}
+
+.card p {
+	color: #8a8a8a;
+}
+
+.card p img {
+	margin-right: 8px;
+	vertical-align: bottom;
+}
+
+.card .info_salary {
+	display: flex;
+	align-items: baseline;
+}
+
+.card .info_salary > *:first-of-type {
+	margin: 8px 24px 8px 0;
+}
+
+.card_action_wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 15px;
+}
+
+.bookmark_btn {
+	margin-right: 31px;
+}
+
+.card_action_wrapper .bookmark_btn {
+	margin-right: 31px;
+}
+
+.card_action_wrapper .detail_btn {
+	color: #008bdc;
+	font-weight: 600;
+}
+
+.detail_btn img {
+	margin-left: 6px;
+}
+
+/* Media Query for tab */
+
+@media (max-width: 1255px) {
+	.card {
+		width: 328px;
+		height: 216px;
+		padding: 16px;
+	}
+}
+
+/* Media Query for Mobile */
+
+@media (max-width: 991px) {
+	.card {
+		width: 360px;
+		height: 224px;
+	}
+}
